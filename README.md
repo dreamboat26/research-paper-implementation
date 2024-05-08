@@ -1,2 +1,2 @@
-# research-paper-implementation
-Contains research paper implementation
+# Translating Theory into Practice: Implementation Strategies
+Research paper implementation 
