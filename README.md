@@ -1,11 +1,10 @@
 # VisionTransformer-From-Scratch
 
 This repository contains PyTorch code which implements Vision Transformer (VIT). (https://arxiv.org/abs/2010.11929)
-It is only meant for educational purposes, to understand how the VIT works and get a feeling for the implementation.
-It is not meant to be used for actually training VIT. More robust and optimized implementations can be found on https://github.com/lucidrains/vit-pytorch.
+My understanding how the VIT works.
+More robust and optimized implementations can be found on https://github.com/lucidrains/vit-pytorch.
 
 <img src="./vit.gif" width="500px"></img>
-
 
 ```bibtex
 @misc{dosovitskiy2020image,
