@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-07-08 5:54:10 pm
-# @copyright MIT License
-#
-
 from __future__ import annotations
 
 import logging
