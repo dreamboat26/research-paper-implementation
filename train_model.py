@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-07-08 3:56:23 pm
-# @copyright MIT License
-#
-
 import argparse
 from typing import Tuple
 
