@@ -1,9 +1,4 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-07-15 7:13:34 pm
-# @copyright MIT License
-#
+
 from dataclasses import dataclass
 
 d_model = 192
