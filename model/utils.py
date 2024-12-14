@@ -1,9 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-04-28 11:44:21 pm
-# @copyright MIT License
-#
 
 import torch
 
