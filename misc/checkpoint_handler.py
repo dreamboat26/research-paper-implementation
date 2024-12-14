@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-07-09 2:42:20 pm
-# @copyright MIT License
-#
-
 import os
 from typing import Dict
 
