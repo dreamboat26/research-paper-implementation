@@ -1,2 +1,2 @@
-# Translating Theory into Practice: Implementation Strategies
-Research paper implementation 
+# Single-Image-Dehazing-via-Conditional-Generative-Adversarial-Network-Implementation
+Pytorch implementation of paper "Single Image Dehazing via Conditional Generative Adversarial Network"
