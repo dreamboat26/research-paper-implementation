@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-07-09 5:26:16 pm
-# @copyright MIT License
-#
-
 from typing import Any, Dict, List
 
 import numpy as np
