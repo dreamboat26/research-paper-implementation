@@ -1,0 +1,14 @@
+##
+# @author Meet Patel <>
+# @file Description
+# @desc Created on 2023-04-16 8:33:02 pm
+# @copyright MIT License
+#
+
+[tool.black]
+line-length = 79
+target-version = ['py27']
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+py_version = 38

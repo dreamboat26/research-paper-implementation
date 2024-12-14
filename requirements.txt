@@ -1,0 +1,8 @@
+datasets==2.13.1
+numpy==1.24.1
+tokenizers==0.13.3
+torch==2.0.1+cu118
+torchinfo==1.8.0
+torchmetrics==1.1.0
+tqdm==4.65.0
+wandb==0.15.10
