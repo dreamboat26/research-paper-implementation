@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-03-28 11:49:16 pm
-# @copyright MIT License
-#
-
 import torch
 
 import config_wmt as c
