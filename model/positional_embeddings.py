@@ -1,9 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-03-24 11:26:30 pm
-# @copyright MIT License
-#
 
 import torch
 import torch.nn as nn
