@@ -1,9 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-10-18 6:29:56 pm
-# @copyright MIT License
-#
 
 # Call this file as : python -m misc.plot_pos_emb --op_path "./plot_pos_emb.jpg"
 
