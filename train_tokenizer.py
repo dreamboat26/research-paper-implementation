@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-07-05 12:15:47 am
-# @copyright MIT License
-#
-
 import argparse
 import os
 import tempfile
