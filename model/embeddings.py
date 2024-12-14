@@ -1,9 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-03-28 11:49:05 pm
-# @copyright MIT License
-#
 
 import numpy as np
 import torch
