@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-07-05 11:38:44 pm
-# @copyright MIT License
-#
-
 import os
 import random
 from typing import List, Tuple
