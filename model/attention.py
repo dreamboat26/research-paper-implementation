@@ -1,10 +1,3 @@
-##
-# @author Meet Patel <>
-# @file Description
-# @desc Created on 2023-03-28 11:37:24 pm
-# @copyright MIT License
-#
-
 import numpy as np
 import torch
 import torch.nn as nn
