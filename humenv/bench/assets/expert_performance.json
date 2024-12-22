@@ -1,0 +1,197 @@
+{
+    "__metadata__": {
+        "average_last": 5,
+        "final_eval_at": 19000000.0
+    },
+    "tasks": {
+        "rotate-x--5-0.8-v2": {
+            "expert_performance": 222.5997512817383
+        },
+        "move-ego-0-0-v2": {
+            "expert_performance": 275.08353515625
+        },
+        "move-ego-low--90-2-v2": {
+            "expert_performance": 270.6935369873047
+        },
+        "jump-2-v2": {
+            "expert_performance": 90.65807601928711
+        },
+        "move-ego-180-2-v2": {
+            "expert_performance": 258.27906646728513
+        },
+        "move-ego-90-4-v2": {
+            "expert_performance": 247.49077697753904
+        },
+        "move-ego-low-180-2-v2": {
+            "expert_performance": 280.14603942871094
+        },
+        "move-ego-low-90-2-v2": {
+            "expert_performance": 259.9664440917969
+        },
+        "rotate-y--5-0.8-v2": {
+            "expert_performance": 272.15171020507813
+        },
+        "rotate-y-5-0.8-v2": {
+            "expert_performance": 273.74293823242186
+        },
+        "raisearms-m-m-v2": {
+            "expert_performance": 267.5503521728516
+        },
+        "headstand-v2": {
+            "expert_performance": 251.29746215820313
+        },
+        "rotate-x-5-0.8-v2": {
+            "expert_performance": 219.2829333496094
+        },
+        "move-ego-180-4-v2": {
+            "expert_performance": 249.8067642211914
+        },
+        "raisearms-h-m-v2": {
+            "expert_performance": 264.6745654296875
+        },
+        "rotate-z-5-0.8-v2": {
+            "expert_performance": 266.16050262451165
+        },
+        "raisearms-l-l-v2": {
+            "expert_performance": 264.610837097168
+        },
+        "sitonground-v2": {
+            "expert_performance": 271.75929382324216
+        },
+        "raisearms-m-h-v2": {
+            "expert_performance": 264.1192721557617
+        },
+        "raisearms-h-h-v2": {
+            "expert_performance": 265.1681918334961
+        },
+        "raisearms-h-l-v2": {
+            "expert_performance": 273.91002380371094
+        },
+        "rotate-z--5-0.8-v2": {
+            "expert_performance": 257.2950775146485
+        },
+        "move-ego-low-0-2-v2": {
+            "expert_performance": 274.70651824951176
+        },
+        "move-ego-0-2-v2": {
+            "expert_performance": 255.56938659667972
+        },
+        "raisearms-m-l-v2": {
+            "expert_performance": 269.35545349121094
+        },
+        "split-0.5-v2": {
+            "expert_performance": 276.13181152343753
+        },
+        "raisearms-l-h-v2": {
+            "expert_performance": 268.2964953613281
+        },
+        "move-ego-90-2-v2": {
+            "expert_performance": 253.77145721435545
+        },
+        "move-ego-0-4-v2": {
+            "expert_performance": 242.65883850097657
+        },
+        "move-ego--90-2-v2": {
+            "expert_performance": 255.45068756103515
+        },
+        "move-ego-low-0-0-v2": {
+            "expert_performance": 273.6686468505859
+        },
+        "move-ego--90-4-v2": {
+            "expert_performance": 245.7570529174805
+        },
+        "raisearms-l-m-v2": {
+            "expert_performance": 266.03318939208987
+        },
+        "lieonground-down-v2": {
+            "expert_performance": 277.510302734375
+        },
+        "crouch-0-v2": {
+            "expert_performance": 268.82825073242185
+        },
+        "lieonground-up-v2": {
+            "expert_performance": 278.66249023437496
+        },
+        "crawl-0.4-2-u-v2": {
+            "expert_performance": 287.0083392333985
+        },
+        "crawl-0.5-2-u-v2": {
+            "expert_performance": 234.50551361083984
+        },
+        "crawl-0.5-3-u-v2": {
+            "expert_performance": 143.45919525146482
+        },
+        "crawl-0.4-0-d-v2": {
+            "expert_performance": 145.7890982055664
+        },
+        "crawl-0.4-3-d-v2": {
+            "expert_performance": 288.76486328125003
+        },
+        "crawl-0.5-0-d-v2": {
+            "expert_performance": 146.4612728881836
+        },
+        "crawl-0.4-2-d-v2": {
+            "expert_performance": 289.55243713378906
+        },
+        "crawl-0.5-1-u-v2": {
+            "expert_performance": 239.98597900390624
+        },
+        "crawl-0.5-0-u-v2": {
+            "expert_performance": 146.0237615966797
+        },
+        "crawl-0.4-3-u-v2": {
+            "expert_performance": 284.4539489746094
+        },
+        "crawl-0.5-1-d-v2": {
+            "expert_performance": 292.17236267089845
+        },
+        "crawl-0.5-3-d-v2": {
+            "expert_performance": 289.55665893554686
+        },
+        "crawl-0.5-2-d-v2": {
+            "expert_performance": 291.74255310058595
+        },
+        "crawl-0.4-1-d-v2": {
+            "expert_performance": 289.25756652832035
+        },
+        "crawl-0.4-1-u-v2": {
+            "expert_performance": 145.94520355224608
+        },
+        "crawl-0.4-0-u-v2": {
+            "expert_performance": 145.11484283447265
+        },
+        "split-2-v2": {
+            "expert_performance": 109.89754119873047
+        },
+        "split-1-v2": {
+            "expert_performance": 279.2461730957031
+        },
+        "move-ego-0-2-raisearms-l-l-v2": {
+            "expert_performance": 191.1256182861328
+        },
+        "move-ego-0-2-raisearms-m-l-v2": {
+            "expert_performance": 179.41694824218752
+        },
+        "move-ego-0-2-raisearms-l-h-v2": {
+            "expert_performance": 194.72304504394532
+        },
+        "move-ego-0-2-raisearms-m-m-v2": {
+            "expert_performance": 178.41779098510742
+        },
+        "move-ego-0-2-raisearms-l-m-v2": {
+            "expert_performance": 174.97209655761716
+        },
+        "move-ego-0-2-raisearms-h-h-v2": {
+            "expert_performance": 165.18795288085937
+        },
+        "move-ego-0-2-raisearms-m-h-v2": {
+            "expert_performance": 179.01558776855467
+        },
+        "move-ego-0-2-raisearms-h-l-v2": {
+            "expert_performance": 191.00076873779295
+        },
+        "move-ego-0-2-raisearms-h-m-v2": {
+            "expert_performance": 175.72247161865235
+        }
+    }
+}

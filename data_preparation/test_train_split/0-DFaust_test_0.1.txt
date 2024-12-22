@@ -1,0 +1,9 @@
+0-DFaust_67_50026_50026_light_hopping_loose_poses.hdf5
+0-DFaust_67_50009_50009_jumping_jacks_poses.hdf5
+0-DFaust_67_50022_50022_punching_poses.hdf5
+0-DFaust_67_50021_50021_shake_hips_poses.hdf5
+0-DFaust_67_50021_50021_running_on_spot_poses.hdf5
+0-DFaust_67_50021_50021_one_leg_loose_poses.hdf5
+0-DFaust_67_50002_50002_one_leg_jump_poses.hdf5
+0-DFaust_67_50002_50002_running_on_spot_poses.hdf5
+0-DFaust_67_50004_50004_punching_poses.hdf5
