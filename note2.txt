@@ -1,0 +1,52 @@
+ B-STAR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners
+
+    Objective: To improve iterative self-improvement in models by balancing two crucial aspects: exploration (generating diverse solutions) and exploitation (selecting high-quality solutions based on rewards).
+
+    Key Concept:
+        Introduces a balance score metric to dynamically monitor and adjust exploration and exploitation configurations (e.g., sampling temperature and reward thresholds) during training.
+        Focuses on maintaining diversity and quality throughout the iterative training process.
+
+    Implementation:
+        Self-Improvement Loop: Combines sampling diverse candidate solutions, applying external rewards (e.g., correctness of solutions), and updating the model iteratively.
+        Dynamic Adjustments: Continuously monitors exploration and exploitation metrics, tuning configurations such as temperature and reward thresholds to maintain balance.
+
+    Advantages: Prevents stagnation in exploration and maintains consistent improvement over iterations.
+
+    Performance: Outperformed other methods in mathematical reasoning (e.g., GSM8k and MATH datasets) by achieving a stable balance between generating and selecting high-quality solutions.
+
+
+Key Idea
+
+This framework addresses the trade-off between generating diverse solutions (exploration) and selecting high-quality solutions (exploitation) during iterative self-improvement.
+Implementation
+
+    Self-Improvement Loop:
+        Generation: Model generates multiple candidate solutions for a given query by sampling with a high temperature.
+        Rewarding: An external reward function scores the candidates based on solution correctness (e.g., matching correct answers or passing tests).
+        Training: The highest-scoring candidates are used to fine-tune the model, improving performance iteratively.
+
+    Monitoring Dynamics:
+        Introduces two metrics:
+            Exploration (Pass@K): Measures diversity and correctness in generated solutions.
+            Exploitation (Best-of-K): Assesses the ability to identify high-quality solutions.
+        Tracks how these metrics evolve during training.
+
+    Dynamic Adjustment:
+        Adjusts parameters like:
+            Sampling temperature: Controls diversity in candidate solutions.
+            Reward threshold: Filters out low-quality solutions.
+        A balance score metric guides these adjustments, ensuring exploration and exploitation remain balanced.
+
+Experiments
+
+    Datasets:
+        Mathematical reasoning tasks like GSM8k and MATH.
+        Coding and commonsense reasoning tasks (e.g., APPS and ARC-Challenge).
+
+    Findings:
+        Exploration tended to degrade over iterations, reducing diversity.
+        B-STAR retained exploration by dynamically tuning configurations, leading to consistent improvement over iterations.
+
+    Performance:
+        Outperformed baselines like Self-Teaching and iterative fine-tuning in reasoning accuracy and diversity maintenance.
+
