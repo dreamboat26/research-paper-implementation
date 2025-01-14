@@ -1,0 +1,106 @@
+Training Large Language Models to Reason in a Continuous Latent Space (Coconut)
+
+    Objective: To explore reasoning in a latent (continuous) space instead of the traditional "language space" where reasoning is articulated in natural language tokens.
+
+    Key Concept:
+        Introduces Chain of Continuous Thought (Coconut), where the last hidden state of an LLM (a continuous representation) is fed back as input instead of decoding into language tokens.
+        This paradigm allows reasoning to occur outside language constraints, enhancing efficiency and flexibility.
+
+    Implementation:
+        Training: Utilizes a multi-stage curriculum inspired by CoT reasoning. It replaces initial language-based reasoning steps with continuous thoughts, gradually shifting the reasoning process into latent space.
+        Inference: Alternates between latent mode (continuous representations) and language mode, guided by specific tokens like <bot> and <eot>.
+
+    Advantages: Enables breadth-first search-like reasoning, allowing the model to explore multiple potential solutions simultaneously and backtrack effectively.
+
+    Performance: Demonstrated superior accuracy in reasoning tasks such as math (GSM8k) and logic (ProntoQA) with fewer generated tokens.
+
+1. Hidden States as Encoded Reasoning Representations
+
+In transformer-based models (like GPT), hidden states are high-dimensional vector representations that capture the context, semantics, and reasoning information of the input sequence up to that point.
+Why Hidden States Are Useful:
+
+    Hidden states encapsulate information from all previous layers of the transformer.
+    They encode abstract reasoning patterns and dependencies that do not require explicit linguistic representation.
+    Feeding hidden states bypasses the need for decoding into natural language, focusing solely on logical relationships.
+
+2. Mechanism for Feeding Hidden States
+From Language Mode to Latent Mode:
+
+    During the language mode, the model generates language tokens and computes hidden states as usual.
+    At the <bot> token (beginning of thought), the model switches to latent mode:
+        Instead of predicting the next token from the hidden state, it directly uses the hidden state (htht​) of the previous reasoning step as the input embedding for the next step.
+
+Direct Feeding in Latent Mode:
+
+    For reasoning step t+1t+1, the input embedding Et+1Et+1​ is:
+    Et+1=ht
+    Et+1​=ht​
+    This bypasses the model's token embedding layer and lets the hidden state serve as the raw input for the next computation.
+
+Back to Language Mode:
+
+    At the <eot> token (end of thought), the model returns to language mode and uses standard token embeddings again.
+
+3. How the Model Understands Hidden States
+
+The model understands and processes these hidden states because of the following architectural and training considerations:
+a. Transformer Layers Are Compatible with Hidden States
+
+    Transformers are designed to process embeddings (vectors). Hidden states are vectors of the same dimensionality as input embeddings.
+    The positional encoding and multi-head attention mechanisms of transformers ensure that the sequence structure and context are preserved, even when hidden states are directly fed.
+
+b. Continuity in Information Flow
+
+    The hidden states contain the entire context of previous reasoning steps. By feeding them directly, the model does not "lose" the reasoning chain—it extends it seamlessly.
+    The continuous thought acts as a latent summary of reasoning progress, enabling the model to build incrementally on earlier steps.
+
+c. Differentiable Training
+
+    The hidden states are fully differentiable, meaning that the gradients propagate through both latent and language modes during backpropagation.
+    This allows the model to learn how to effectively transition between modes and interpret hidden states during training.
+
+4. How Does It Reason in Latent Mode Without Language Tokens?
+a. Breadth of Representation:
+
+    A single hidden state can encode multiple potential reasoning paths. For instance:
+        htht​ might represent multiple next steps probabilistically (like branching in breadth-first search).
+    This gives the model flexibility to explore alternatives without committing to a single sequence of tokens.
+
+b. Implicit Reasoning through Attention:
+
+    Self-attention mechanisms enable the model to focus on relevant parts of the hidden state when computing the next step.
+    This dynamic focus ensures that the hidden state is interpreted correctly, guiding the reasoning process.
+
+c. Training Signal from Language Reasoning:
+
+    During multi-stage curriculum training:
+        The latent mode is supervised by the outputs of the language mode.
+        This aligns the hidden state representations with reasoning patterns expressed in natural language.
+
+5. Why Does This Work?
+
+The success of directly feeding hidden states is rooted in the model's ability to generalize patterns learned during pretraining and fine-tuning:
+
+    Pretraining: LLMs learn to encode language structure and reasoning patterns in their hidden states.
+    Fine-tuning: Coconut’s curriculum trains the model to interpret these hidden states as representations of reasoning progress.
+
+By leveraging hidden states, the model skips unnecessary translation into natural language, focusing on abstract reasoning in a compact and efficient form.
+6. Challenges and How They’re Addressed
+Challenge 1: Loss of Interpretability
+
+    Hidden states are not human-readable, making it difficult to debug or understand intermediate reasoning steps.
+    Solution: The model can still produce language-based reasoning steps during language mode for interpretability.
+
+Challenge 2: Risk of Overfitting to Latent Representations
+
+    The model might overfit to specific patterns in latent thoughts.
+    Solution: The curriculum ensures a gradual transition from language-based reasoning, grounding latent reasoning in language data.
+
+Challenge 3: Complexity of Training
+
+    Sequential passes through latent mode increase computational requirements.
+    Solution: Optimization techniques like caching and reducing redundant computation are used.
+
+Conclusion
+
+The key insight is that the model doesn’t "understand" hidden states as isolated entities—it uses them as incremental extensions of its internal reasoning process, guided by transformer architecture and careful training. By bypassing language tokens, the model achieves more efficient and flexible reasoning. Let me know if you'd like examples or more details about the architecture!
