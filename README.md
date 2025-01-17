@@ -1,6 +1,6 @@
 # Paper Overview
 
-## 2. [DALLE-3: Improving Image Generation With Better Captions](#dalle-3-improving-image-generation-with-better-captions)
+## [DALLE-3: Improving Image Generation With Better Captions](#dalle-3-improving-image-generation-with-better-captions)
 ### Overview:
 DALLE-3 improves upon previous versions by utilizing **better captions** to guide image generation. The focus is on generating **high-quality images** from textual descriptions using detailed and structured captions.
 
