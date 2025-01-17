@@ -1,6 +1,6 @@
 # Paper Summary
 
-## 4. Cached Transformers: Improving Transformers with Differentiable Memory Cache
+## Cached Transformers: Improving Transformers with Differentiable Memory Cache
 ### Overview
 **Cached Transformers** introduce a method for efficiently storing and accessing previously computed activations using a **differentiable memory cache**. This allows transformers to process long sequences without the need to recompute activations for the same tokens multiple times, making the model more efficient and scalable for long-sequence tasks.
 
