@@ -1,6 +1,6 @@
 # Paper Summary
 
-## 5. **Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold**
+## **Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold**
 
 This paper introduces **Drag Your GAN**, an interactive method for manipulating generative image models using points in the image space. It allows users to click and drag specific points to manipulate the generated images in a controllable manner.
 
