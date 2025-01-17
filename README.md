@@ -1,6 +1,6 @@
 # Paper Summary
 
-## 4. **Direct Preference Optimization: Your Language Model is Secretly a Reward Model**
+## **Direct Preference Optimization: Your Language Model is Secretly a Reward Model**
 
 This paper explores **Direct Preference Optimization (DPO)**, a new approach where language models are trained to optimize a reward model directly based on user preferences, rather than relying on traditional reinforcement learning.
 
