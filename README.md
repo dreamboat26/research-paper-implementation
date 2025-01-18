@@ -1,32 +1,28 @@
-## **LRM: Large Reconstruction Model for Single Image to 3D**
+## **Lumiere: Space-Time Diffusion Model for Video Generation**
 
 ### **Overview:**
-The **Large Reconstruction Model (LRM)** reconstructs high-quality 3D models from a single 2D image. Traditional methods often require multiple views of an object to reconstruct 3D shapes, but LRM does this from just one image.
+**Lumiere** introduces a space-time diffusion model for generating videos. It focuses on both **spatial** and **temporal consistency** to produce high-quality, realistic videos over longer sequences.
 
 ### **Key Features:**
-- **Single-image to 3D Reconstruction**: Reconstructs high-quality 3D models using just a single 2D image.
-- **Latent Space Representation**: Utilizes a latent space to encode 3D properties, enabling compact and efficient representations.
+- **Space-Time Diffusion**: Gradual noise removal process applied in both spatial (image) and temporal (video) domains.
+- **High-Quality Video Generation**: Ensures the video looks realistic both in each frame and across frames.
   
 ### **Architecture:**
-1. **Encoder-Decoder Framework**:
-   - **Encoder**: A Convolutional Neural Network (CNN) processes the input image and extracts essential features.
-   - **Latent Representation**: The encoder's output is mapped into a latent space that represents 3D properties.
-   - **Decoder**: The decoder reconstructs the 3D object (in mesh or voxel format) from the latent space.
+1. **Diffusion Process**:
+   - Adds noise to a video and then progressively removes the noise over time, refining the output frame by frame.
+   - Works on both **spatial features** (within each frame) and **temporal relationships** (between frames).
 
-2. **Multi-Scale Encoding**:
-   - The input image is processed at multiple resolutions, capturing both fine and global features for more accurate 3D reconstruction.
+2. **Space-Time Attention**:
+   - The model uses attention mechanisms to understand spatial relationships in frames and temporal dependencies across frames, making the video more coherent.
 
-3. **3D Prediction**:
-   - The final output is a 3D model (e.g., mesh, depth map, voxel grid), reconstructed from the image’s encoded features.
+3. **Video Refinement**:
+   - Multiple refinement steps enhance the quality of the generated video by focusing on both spatial details (textures, shapes) and temporal consistency (smooth transitions between frames).
 
 ### **Key Contributions:**
-- High-quality **3D reconstruction** from a **single 2D image**.
-- Efficient use of **latent space** for compact representation of complex 3D shapes.
+- **Space-time diffusion** for generating consistent and high-quality video sequences.
+- Focuses on both **spatial resolution** and **temporal coherence** for realistic video generation.
 
 ---
 
 ## Conclusion
-
-- **LRM** reconstructs **high-quality 3D models** from a single 2D image using latent space representations.
-
-
+- **Lumiere** generates **high-quality videos** using a space-time diffusion process to maintain both spatial and temporal consistency.
