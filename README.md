@@ -1,6 +1,6 @@
 # Summary of Recent Paper
 
-## 1. Exphormer: Sparse Transformers for Graphs
+## Exphormer: Sparse Transformers for Graphs
 
 ### Problem:
 - Traditional transformers struggle with large graphs due to quadratic memory and computation costs.
