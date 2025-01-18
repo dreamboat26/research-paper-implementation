@@ -1,4 +1,4 @@
-# Summary of Recent Papers 
+# Summary of Recent Paper
 
 ## 1. Exphormer: Sparse Transformers for Graphs
 
