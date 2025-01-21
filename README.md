@@ -1,4 +1,4 @@
-# LlamaV-01: Rethinking Step-by-Step Visual Reasoning in LLMs
+# Llama V-01: Rethinking Step-by-Step Visual Reasoning in LLMs
 
 ## Overview
 
