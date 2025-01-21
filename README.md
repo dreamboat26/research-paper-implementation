@@ -78,5 +78,5 @@ The results demonstrate that MatterGen can generate **realistic materials** with
 
 ## References
 
-- Original paper: [MatterGen: A Generative Model for Inorganic Materials Design](https://arxiv.org/abs/XXXXX)
+- Original paper: [MatterGen: A Generative Model for Inorganic Materials Design](https://arxiv.org/abs/2312.03687)
 
