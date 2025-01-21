@@ -75,6 +75,4 @@ The **Selective Attention** mechanism improves the Transformer architecture by e
 
 ## References
 
-- Original paper: [Selective Attention Improves Transformer](https://arxiv.org/abs/XXXXX)
-
-
+- Original paper: [Selective Attention Improves Transformer](https://arxiv.org/abs/2410.02703)
